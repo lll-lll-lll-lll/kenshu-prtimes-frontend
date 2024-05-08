@@ -76,15 +76,16 @@ header .header-head-container-logo{
 /* リリースコンポーネント */
 .header-head-container-release {
     margin-left: auto;
-    .header-head-container-release-list {
-        align-items: center;
-        background-color:#345584;
-        border-radius: 5px;
-        display: flex;
-        list-style: none;
-        margin: 0;
-        padding: 6px 15px 8px;
-    }
+}
+
+.header-head-container-release-list {
+    align-items: center;
+    background-color:#345584;
+    border-radius: 5px;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 6px 15px 8px;
 }
 
 /* リリースの各要素ごとのコンポーネント */
@@ -123,13 +124,14 @@ header .header-foot-container {
     background-color:#345584;
     display: block;
     margin-top: -4px;
-    .header-foot-container-list {
-        display: flex;
-        list-style: none;
-        margin: 0 auto;
-        padding: 1px 0 12px;
-        width: 1125px;
-    }
+}
+
+.header-foot-container-list {
+    display: flex;
+    list-style: none;
+    margin: 0 auto;
+    padding: 1px 0 12px;
+    width: 1125px;
 }
 
 /* ナビゲーションの各要素 */
