@@ -2,54 +2,57 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="/styles.css" />
     <title>PR TIMES</title>
   </head>
   <body>
-    <header>
-        <div class="header-head-container">
-            <div class="header-head-container-logo">
-                <a href="#">
-                    <img alt="PR TIMES" class="header-head-container-logo-frame" src="images/logo_prtimes.svg"/>
+    <header class="header-container">
+        <div class="header-wrapper">
+            <div class="brand-logo">
+                <a href="#" class="logo-img-link">
+                    <img alt="PR TIMES" height="30" width="120" src="images/logo_prtimes.svg"/>
                 </a>
-                <div class="header-head-container-logo-description">
-                    <div class="header-head-container-logo-description-h1">
+                <div class="brand-text-wrapper">
+                    <span class="brand__text">
                         プレスリリース・ニュース配信サービスのPR TIMES
-                    </div>
+                    </span>
                 </div>
             </div>
-            <div class="header-head-container-release">
-                <ul class="header-head-container-release-list">
-                    <li>
-                        <a>プレスリリースを受信</a>
+            <div class="user-menu">
+                <ul class="user-menu__list">
+                    <li class="user-menu__list-item">
+                        <a class="user-menu__list-item--link" href="#">プレスリリースを受信</a>
                     </li>
-                    <li>
-                        <a>配信を依頼</a>
+                    <li class="user-menu__list-item">
+                        <a class="user-menu__list-item--link" href="#">配信を依頼</a>
                     </li>
-                    <li>
-                        <a>ログイン</a>
+                    <li class="user-menu__list-item">
+                        <a class="user-menu__list-item--link" href="#">ログイン</a>
                     </li>
                 </ul>
             </div>
-            <form class="header-head-container-search">
-                <div class="header-head-container-search-wrapper">
-                    <input type="search" placeholder="キーワードで検索"/>
-                    <button type="button"><img alt="検索" src="images/magnifying-glass-solid.svg" width="20" height="20"></button>
+            <form class="release-search">
+                <div class="release-search-wrapper">
+                    <input class="search-input" type="search" placeholder="キーワードで検索"/>
+                    <button class="search-button" type="submit">
+                        <img alt="検索" src="/images/magnifying-glass-solid.svg" width="20" height="20">
+                    </button>
                 </div>
             </form>
         </div>
-        <div class="header-foot-container">
-            <ul class="header-foot-container-list">
-                <li><a href="#" class="active">プレスリリース</a></li>
-                <li><a href="#">ランキング</a></li>
-                <li><a href="#">TV</a></li>
-                <li><a href="#">ストーリー</a></li>
+        <nav class="service">
+            <ul class="service__list">
+                <li class="service__list-item"><a class="service__list-item-link--active" href="#">プレスリリース</a></li>
+                <li class="service__list-item"><a class="service__list-item-link" href="#">ランキング</a></li>
+                <li class="service__list-item"><a class="service__list-item-link" href="#">TV</a></li>
+                <li class="service__list-item"><a class="service__list-item-link" href="#">ストーリー</a></li>
             </ul>
-        </div>
+        </nav>
     </header>
     <div id="category-header"></div>
     <div id="ranking"></div>
-    <main></main>
+    <main>
+    </main>
     <footer></footer>
   </body>
 </html>

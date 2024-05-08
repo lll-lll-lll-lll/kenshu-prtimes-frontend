@@ -6,13 +6,13 @@
     font: serif;
 }
 
-header {
+.header-container {
     background-color:#345584;
     box-sizing: border-box;
     display: block;
 }
 
-header .header-head-container {
+.header-wrapper {
     align-items: center;
     background-color: #345584;
     display: flex;
@@ -23,17 +23,15 @@ header .header-head-container {
     width: 1125px;
 } 
 
-/* 検索コンポーネント */
-.header-head-container-search {
+.release-search {
     margin-left: 10px;
     width: 288px;
-    .header-head-container-search-wrapper {
+    .release-search-wrapper {
         display: flex;
     }
 }
 
-/* 検索入力 */
-.header-head-container-search-wrapper input {
+.search-input {
     background: #fff;
     border:none;
     border-radius: 4px 0 0 4px;
@@ -44,28 +42,26 @@ header .header-head-container {
     padding-left: 15px;
     width: 258px;
 }
-/* 検索ボタン */
-.header-head-container-search-wrapper button {
+
+.search-button {
     background-color: #3081c9;
     border-radius: 0 4px 4px 0;
     cursor: pointer;
     height: 30px;
-    cursor: pointer;
     width: 30px;
 }
 
-/* ロゴコンポーネント */
-header .header-head-container-logo{
+.brand-logo{
     align-items: center;
     display: flex;
-    .header-head-container-logo-frame{
+    .logo-img-link{
         display: flex;
         text-align: center;
         cursor: pointer;
     }
-    .header-head-container-logo-description{
+    .brand-text-wrapper{
         padding-left: 12px;
-        .header-head-container-logo-description-h1{
+        .brand__text{
             color: #BFC9D7;
             font-size: 12px;
             letter-spacing: -.05em;
@@ -73,12 +69,11 @@ header .header-head-container-logo{
     }
 }
 
-/* リリースコンポーネント */
-.header-head-container-release {
+.user-menu {
     margin-left: auto;
 }
 
-.header-head-container-release-list {
+.user-menu__list {
     align-items: center;
     background-color:#345584;
     border-radius: 5px;
@@ -88,45 +83,44 @@ header .header-head-container-logo{
     padding: 6px 15px 8px;
 }
 
-/* リリースの各要素ごとのコンポーネント */
-.header-head-container-release-list li { 
+.user-menu__list-item { 
     background-color: transparent;
     display: list-item;
     padding-right: 15px;
     position: relative;
-    a {
-        color: #fff;
-        cursor: pointer;
-        font-size: 13px;
-        text-decoration: none;
-    }
-
-    a:hover{
-        color: #fff;
-        cursor: pointer;
-        font-size: 13px;
-        text-decoration: underline;
-    }
-
-    a::after {
-        background-color: #BFC9D7;
-        content: '';
-        height: 13px;
-        position: absolute;
-        top: 4px;
-        right: 7px;
-        width: 1px;
-    }
 }
 
-/* ナビゲーションコンポーネント */
-header .header-foot-container {
+.user-menu__list-item--link {
+    color: #fff;
+    cursor: pointer;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.user-menu__list-item--link:hover{
+    color: #fff;
+    cursor: pointer;
+    font-size: 13px;
+    text-decoration: underline;
+}
+
+.user-menu__list-item--link::after {
+    background-color: #BFC9D7;
+    content: '';
+    height: 13px;
+    position: absolute;
+    top: 4px;
+    right: 7px;
+    width: 1px;
+}
+
+.service {
     background-color:#345584;
     display: block;
     margin-top: -4px;
 }
 
-.header-foot-container-list {
+.service__list {
     display: flex;
     list-style: none;
     margin: 0 auto;
@@ -134,36 +128,38 @@ header .header-foot-container {
     width: 1125px;
 }
 
-/* ナビゲーションの各要素 */
-.header-foot-container-list li {
+.service__list-item {
     color: #BFC9D7;
     display: list-item;
     font-size: 12px;
     line-height: 12px;
     padding-right: 15px;
     position: relative;
+}
 
-    a {
-        color:#BFC9D7;
-        cursor: pointer;
-        font-size: 13px;
-    }
-    a.active {
-        color: #fff;
-        font-weight: bold;
-    }
-    a:hover{
-        color: #fff;
-        cursor: pointer;
-        font-size: 13px;
-    }
-    a::after {
-        content: '';
-        width: 1px;
-        height: 12px;
-        background-color: #BFC9D7;
-        position: absolute;
-        top: 2px;
-        right: 7px;
-    }
+.service__list-item-link {
+    color:#BFC9D7;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.service__list-item-link--active {
+    color: #fff;
+    font-weight: bold;
+}
+
+.service__list-item-link:hover{
+    color: #fff;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.service__list-item-link::after {
+    content: '';
+    width: 1px;
+    height: 12px;
+    background-color: #BFC9D7;
+    position: absolute;
+    top: 2px;
+    right: 7px;
 }
