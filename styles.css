@@ -6,38 +6,38 @@
     font: serif;
 }
 header{
-    background-color:rgba(41, 76, 122, 1);
+    background-color:#345584;
     box-sizing: border-box;
     display: block;
-        .header__secondary__container{
+        .header-sub-contaienr{
             align-items: center;
-            background-color: rgba(41, 76, 122, 1);
+            background-color: #345584;
             display: flex;
             justify-content: space-between;
             left: 175px;
             margin: 0 auto;
             padding: 12px 0;
             width: 1125px;
-            .header__secondary__container__logo{
+            .header-sub-contaienr__logo{
                 align-items: center;
                 display: flex;
-                .header__secondary__container__logo--frame{
+                .header-sub-contaienr__logo--frame{
                     display: flex;
                     text-align: center;
                     cursor: pointer;
                 }
-                .header__secondary__container__logo__description{
+                .header-sub-contaienr__logo__description{
                     padding-left: 12px;
-                    .header__secondary__container__logo__description--h1{
-                        color: rgba(191, 201, 215, 1);
+                    .header-sub-contaienr__logo__description--h1{
+                        color: #BFC9D7;
                         font-size: 12px;
                         letter-spacing: -.05em;
                     }
                 }
             }
-            .header__secondary__container__release {
+            .header-sub-contaienr__release {
                 margin-left: auto;
-                .header__secondary__container__release__list {
+                .header-sub-contaienr__release__list {
                     align-items: center;
                     background-color:#345584;
                     border-radius: 5px;
@@ -45,18 +45,18 @@ header{
                     list-style: none;
                     margin: 0;
                     padding: 6px 15px 8px;
-                    .header__secondary__container__release--item { 
+                    .header-sub-contaienr__release--item { 
                         background-color: transparent;
                         display: list-item;
                         padding-right: 15px;
                         position: relative;
-                        .header__secondary__container__release--item--a{
+                        .header-sub-contaienr__release--item--a{
                             color: #fff;
                             cursor: pointer;
                             font-size: 13px;
                             text-decoration: none;
                         }
-                        .header__secondary__container__release--item--a:hover{
+                        .header-sub-contaienr__release--item--a:hover{
                             color: #fff;
                             cursor: pointer;
                             font-size: 13px;
@@ -64,7 +64,7 @@ header{
                         }
 
                     }
-                    .header__secondary__container__release--item::after {
+                    .header-sub-contaienr__release--item::after {
                         background-color: #BFC9D7;
                         content: '';
                         height: 13px;
@@ -73,21 +73,21 @@ header{
                         right: 7px;
                         width: 1px;
                     }
-                    /* afterが全てのheader__secondary__container__release--item classに適応されてしまう
+                    /* afterが全てのheader-sub-contaienr__release--item classに適応されてしまう
                        ので、last要素に背景カラーで見えないようにしています。
                        TODO:なんかいい方法ないですかね*/
-                    .header__secondary__container__release--item.last::after {
-                        background-color: rgba(41, 76, 122, 1);
+                    .header-sub-contaienr__release--item.last::after {
+                        background-color: #345584;
                     }
                     
                 }
             }
-            .header__secondary__container__search{
+            .header-sub-contaienr__search{
                 margin-left: 10px;
                 width: 288px;
-                .header__secondary__container__search__wrapper {
+                .header-sub-contaienr__search__wrapper {
                     display: flex;
-                    .header__secondary__container__search__wrapper--input {
+                    .header-sub-contaienr__search__wrapper--input {
                         background: #fff;
                         border:none;
                         border-radius: 4px 0 0 4px;
@@ -98,7 +98,7 @@ header{
                         padding-left: 15px;
                         width: 258px;
                     }
-                    .header__secondary__container__search__wrapper--button {
+                    .header-sub-contaienr__search__wrapper--button {
                         background-color: #3081c9;
                         border-radius: 0 4px 4px 0;
                         cursor: pointer;
@@ -110,7 +110,7 @@ header{
             }
         } 
         .header__primary__container {
-            background-color:rgba(41, 76, 122, 1);
+            background-color:#345584;
             display: block;
             margin-top: -4px;
             .header__primary__container__wrapper {
@@ -127,7 +127,7 @@ header{
                     padding-right: 15px;
                     position: relative;
                     .header__primary__container__wrapper--item--a{
-                        color:rgba(191, 201, 215, 1);
+                        color:#BFC9D7;
                         cursor: pointer;
                         font-size: 13px;
                     }
@@ -150,9 +150,9 @@ header{
                     top: 2px;
                     right: 7px;
                 }
-                /* TODO: header__secondary__container__release--item.last classと同じ理由です。 */
-                .header__primary__container__wrapper--item.last::after {
-                    background-color: rgba(41, 76, 122, 1);
+                /* TODO: header-sub-contaienr__release--item.last classと同じ理由です。 */
+                .header__primary__container__wrapper--item:last-of-type {
+                    content: none;
                 }
             }
         }
