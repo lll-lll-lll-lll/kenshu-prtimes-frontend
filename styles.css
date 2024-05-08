@@ -100,12 +100,9 @@ header{
                     }
                     .header__secondary__container__search__wrapper--button {
                         background-color: #3081c9;
-                        background-position: 5px 5px;
-                        background-repeat: no-repeat;
                         border-radius: 0 4px 4px 0;
                         cursor: pointer;
                         height: 30px;
-                        text-transform: none;
                         cursor: pointer;
                         width: 30px;
                     }
