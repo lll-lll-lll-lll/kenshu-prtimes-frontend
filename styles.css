@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+}
+header{
+    background-color:rgba(41, 76, 122, 1);
+    box-sizing: border-box;
+    display: block;
+        .header__secondary__container{
+            align-items: center;
+            background-color: rgba(41, 76, 122, 1);
+            display: flex;
+            justify-content: space-between;
+            left: 175px;
+            margin: 0 auto;
+            padding: 12px 0;
+            width: 1125px;
+            .header__secondary__container__logo{
+                align-items: center;
+                display: flex;
+                .header__secondary__container__logo--frame{
+                    display: flex;
+                    text-align: center;
+                    cursor: pointer;
+                }
+                .header__secondary__container__logo__description{
+                    padding-left: 12px;
+                    .header__secondary__container__logo__description--h1{
+                        color: rgba(191, 201, 215, 1);
+                        font-size: 12px;
+                        letter-spacing: -.05em;
+                    }
+                }
+            }
+            .header__secondary__container__release {
+                margin-left: auto;
+                .header__secondary__container__release__list {
+                    align-items: center;
+                    background-color:#345584;
+                    border-radius: 5px;
+                    display: flex;
+                    list-style: none;
+                    margin: 0;
+                    padding: 6px 15px 8px;
+                    .header__secondary__container__release--item { 
+                        background-color: transparent;
+                        display: list-item;
+                        padding-right: 15px;
+                        position: relative;
+                        .header__secondary__container__release--item--a{
+                            color: #fff;
+                            cursor: pointer;
+                            font-size: 13px;
+                            text-decoration: none;
+                        }
+                        .header__secondary__container__release--item--a:hover{
+                            color: #fff;
+                            cursor: pointer;
+                            font-size: 13px;
+                            text-decoration: underline;
+                        }
+
+                    }
+                    .header__secondary__container__release--item::after {
+                        background-color: #BFC9D7;
+                        content: '';
+                        height: 13px;
+                        position: absolute;
+                        top: 4px;
+                        right: 7px;
+                        width: 1px;
+                    }
+                    /* afterが全てのheader__secondary__container__release--item classに適応されてしまう
+                       ので、last要素に背景カラーで見えないようにしています。
+                       TODO:なんかいい方法ないですかね*/
+                    .header__secondary__container__release--item.last::after {
+                        background-color: rgba(41, 76, 122, 1);
+                    }
+                    
+                }
+            }
+            .header__secondary__container__search{
+                margin-left: 10px;
+                width: 288px;
+                .header__secondary__container__search__wrapper {
+                    display: flex;
+                    .header__secondary__container__search__wrapper--input {
+                        background: #fff;
+                        border:none;
+                        border-radius: 4px 0 0 4px;
+                        font-size: 13px;
+                        height: 30px;
+                        line-height: 30px;
+                        outline: none;
+                        padding-left: 15px;
+                        width: 258px;
+                    }
+                    .header__secondary__container__search__wrapper--button {
+                        background-color: #3081c9;
+                        background-position: 5px 5px;
+                        background-repeat: no-repeat;
+                        border-radius: 0 4px 4px 0;
+                        cursor: pointer;
+                        height: 30px;
+                        text-transform: none;
+                        cursor: pointer;
+                        width: 30px;
+                    }
+                }
+            }
+        } 
+        .header__primary__container {
+            background-color:rgba(41, 76, 122, 1);
+            display: block;
+            margin-top: -4px;
+            .header__primary__container__wrapper {
+                display: flex;
+                list-style: none;
+                margin: 0 auto;
+                padding: 1px 0 12px;
+                width: 1125px;
+                .header__primary__container__wrapper--item{
+                    color: #BFC9D7;
+                    display: list-item;
+                    font-size: 12px;
+                    line-height: 12px;
+                    padding-right: 15px;
+                    position: relative;
+                    .header__primary__container__wrapper--item--a{
+                        color:rgba(191, 201, 215, 1);
+                        cursor: pointer;
+                        font-size: 13px;
+                    }
+                    .header__primary__container__wrapper--item--a.active{
+                        color: #fff;
+                        font-weight: bold;
+                    }
+                    .header__primary__container__wrapper--item--a:hover{
+                        color: #fff;
+                        cursor: pointer;
+                        font-size: 13px;
+                    }
+                }
+                .header__primary__container__wrapper--item::after {
+                    content: '';
+                    width: 1px;
+                    height: 12px;
+                    background-color: #BFC9D7;
+                    position: absolute;
+                    top: 2px;
+                    right: 7px;
+                }
+                /* TODO: header__secondary__container__release--item.last classと同じ理由です。 */
+                .header__primary__container__wrapper--item.last::after {
+                    background-color: rgba(41, 76, 122, 1);
+                }
+            }
+        }
+    }
