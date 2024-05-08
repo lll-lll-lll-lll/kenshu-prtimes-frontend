@@ -1,159 +1,167 @@
-*{
+* {
     margin: 0;
     padding: 0;
     border: 0;
     font-size: 100%;
     font: serif;
 }
-header{
+
+header {
     background-color:#345584;
     box-sizing: border-box;
     display: block;
-        .header-sub-contaienr{
-            align-items: center;
-            background-color: #345584;
-            display: flex;
-            justify-content: space-between;
-            left: 175px;
-            margin: 0 auto;
-            padding: 12px 0;
-            width: 1125px;
-            .header-sub-contaienr__logo{
-                align-items: center;
-                display: flex;
-                .header-sub-contaienr__logo--frame{
-                    display: flex;
-                    text-align: center;
-                    cursor: pointer;
-                }
-                .header-sub-contaienr__logo__description{
-                    padding-left: 12px;
-                    .header-sub-contaienr__logo__description--h1{
-                        color: #BFC9D7;
-                        font-size: 12px;
-                        letter-spacing: -.05em;
-                    }
-                }
-            }
-            .header-sub-contaienr__release {
-                margin-left: auto;
-                .header-sub-contaienr__release__list {
-                    align-items: center;
-                    background-color:#345584;
-                    border-radius: 5px;
-                    display: flex;
-                    list-style: none;
-                    margin: 0;
-                    padding: 6px 15px 8px;
-                    .header-sub-contaienr__release--item { 
-                        background-color: transparent;
-                        display: list-item;
-                        padding-right: 15px;
-                        position: relative;
-                        .header-sub-contaienr__release--item--a{
-                            color: #fff;
-                            cursor: pointer;
-                            font-size: 13px;
-                            text-decoration: none;
-                        }
-                        .header-sub-contaienr__release--item--a:hover{
-                            color: #fff;
-                            cursor: pointer;
-                            font-size: 13px;
-                            text-decoration: underline;
-                        }
+}
 
-                    }
-                    .header-sub-contaienr__release--item::after {
-                        background-color: #BFC9D7;
-                        content: '';
-                        height: 13px;
-                        position: absolute;
-                        top: 4px;
-                        right: 7px;
-                        width: 1px;
-                    }
-                    /* afterが全てのheader-sub-contaienr__release--item classに適応されてしまう
-                       ので、last要素に背景カラーで見えないようにしています。
-                       TODO:なんかいい方法ないですかね*/
-                    .header-sub-contaienr__release--item.last::after {
-                        background-color: #345584;
-                    }
-                    
-                }
-            }
-            .header-sub-contaienr__search{
-                margin-left: 10px;
-                width: 288px;
-                .header-sub-contaienr__search__wrapper {
-                    display: flex;
-                    .header-sub-contaienr__search__wrapper--input {
-                        background: #fff;
-                        border:none;
-                        border-radius: 4px 0 0 4px;
-                        font-size: 13px;
-                        height: 30px;
-                        line-height: 30px;
-                        outline: none;
-                        padding-left: 15px;
-                        width: 258px;
-                    }
-                    .header-sub-contaienr__search__wrapper--button {
-                        background-color: #3081c9;
-                        border-radius: 0 4px 4px 0;
-                        cursor: pointer;
-                        height: 30px;
-                        cursor: pointer;
-                        width: 30px;
-                    }
-                }
-            }
-        } 
-        .header-main-container {
-            background-color:#345584;
-            display: block;
-            margin-top: -4px;
-            .header-main-container__wrapper {
-                display: flex;
-                list-style: none;
-                margin: 0 auto;
-                padding: 1px 0 12px;
-                width: 1125px;
-                .header-main-container__wrapper--item{
-                    color: #BFC9D7;
-                    display: list-item;
-                    font-size: 12px;
-                    line-height: 12px;
-                    padding-right: 15px;
-                    position: relative;
-                    .header-main-container__wrapper--item--a{
-                        color:#BFC9D7;
-                        cursor: pointer;
-                        font-size: 13px;
-                    }
-                    .header-main-container__wrapper--item--a.active{
-                        color: #fff;
-                        font-weight: bold;
-                    }
-                    .header-main-container__wrapper--item--a:hover{
-                        color: #fff;
-                        cursor: pointer;
-                        font-size: 13px;
-                    }
-                }
-                .header-main-container__wrapper--item::after {
-                    content: '';
-                    width: 1px;
-                    height: 12px;
-                    background-color: #BFC9D7;
-                    position: absolute;
-                    top: 2px;
-                    right: 7px;
-                }
-                /* TODO: header-sub-contaienr__release--item.last classと同じ理由です。 */
-                .header-main-container__wrapper--item:last-of-type {
-                    content: none;
-                }
-            }
+header .header-head-container {
+    align-items: center;
+    background-color: #345584;
+    display: flex;
+    justify-content: space-between;
+    left: 175px;
+    margin: 0 auto;
+    padding: 12px 0;
+    width: 1125px;
+} 
+
+/* 検索コンポーネント */
+.header-head-container-search {
+    margin-left: 10px;
+    width: 288px;
+    .header-head-container-search-wrapper {
+        display: flex;
+    }
+}
+
+/* 検索入力 */
+.header-head-container-search-wrapper input {
+    background: #fff;
+    border:none;
+    border-radius: 4px 0 0 4px;
+    font-size: 13px;
+    height: 30px;
+    line-height: 30px;
+    outline: none;
+    padding-left: 15px;
+    width: 258px;
+}
+/* 検索ボタン */
+.header-head-container-search-wrapper button {
+    background-color: #3081c9;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    height: 30px;
+    cursor: pointer;
+    width: 30px;
+}
+
+/* ロゴコンポーネント */
+header .header-head-container-logo{
+    align-items: center;
+    display: flex;
+    .header-head-container-logo-frame{
+        display: flex;
+        text-align: center;
+        cursor: pointer;
+    }
+    .header-head-container-logo-description{
+        padding-left: 12px;
+        .header-head-container-logo-description-h1{
+            color: #BFC9D7;
+            font-size: 12px;
+            letter-spacing: -.05em;
         }
     }
+}
+
+/* リリースコンポーネント */
+.header-head-container-release {
+    margin-left: auto;
+    .header-head-container-release-list {
+        align-items: center;
+        background-color:#345584;
+        border-radius: 5px;
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 6px 15px 8px;
+    }
+}
+
+/* リリースの各要素ごとのコンポーネント */
+.header-head-container-release-list li { 
+    background-color: transparent;
+    display: list-item;
+    padding-right: 15px;
+    position: relative;
+    a {
+        color: #fff;
+        cursor: pointer;
+        font-size: 13px;
+        text-decoration: none;
+    }
+
+    a:hover{
+        color: #fff;
+        cursor: pointer;
+        font-size: 13px;
+        text-decoration: underline;
+    }
+
+    a::after {
+        background-color: #BFC9D7;
+        content: '';
+        height: 13px;
+        position: absolute;
+        top: 4px;
+        right: 7px;
+        width: 1px;
+    }
+}
+
+/* ナビゲーションコンポーネント */
+header .header-foot-container {
+    background-color:#345584;
+    display: block;
+    margin-top: -4px;
+    .header-foot-container-list {
+        display: flex;
+        list-style: none;
+        margin: 0 auto;
+        padding: 1px 0 12px;
+        width: 1125px;
+    }
+}
+
+/* ナビゲーションの各要素 */
+.header-foot-container-list li {
+    color: #BFC9D7;
+    display: list-item;
+    font-size: 12px;
+    line-height: 12px;
+    padding-right: 15px;
+    position: relative;
+
+    a {
+        color:#BFC9D7;
+        cursor: pointer;
+        font-size: 13px;
+    }
+    a.active {
+        color: #fff;
+        font-weight: bold;
+    }
+    a:hover{
+        color: #fff;
+        cursor: pointer;
+        font-size: 13px;
+    }
+    a::after {
+        content: '';
+        width: 1px;
+        height: 12px;
+        background-color: #BFC9D7;
+        position: absolute;
+        top: 2px;
+        right: 7px;
+    }
+}
