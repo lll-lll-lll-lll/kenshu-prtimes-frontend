@@ -109,39 +109,39 @@ header{
                 }
             }
         } 
-        .header__primary__container {
+        .header-main-container {
             background-color:#345584;
             display: block;
             margin-top: -4px;
-            .header__primary__container__wrapper {
+            .header-main-container__wrapper {
                 display: flex;
                 list-style: none;
                 margin: 0 auto;
                 padding: 1px 0 12px;
                 width: 1125px;
-                .header__primary__container__wrapper--item{
+                .header-main-container__wrapper--item{
                     color: #BFC9D7;
                     display: list-item;
                     font-size: 12px;
                     line-height: 12px;
                     padding-right: 15px;
                     position: relative;
-                    .header__primary__container__wrapper--item--a{
+                    .header-main-container__wrapper--item--a{
                         color:#BFC9D7;
                         cursor: pointer;
                         font-size: 13px;
                     }
-                    .header__primary__container__wrapper--item--a.active{
+                    .header-main-container__wrapper--item--a.active{
                         color: #fff;
                         font-weight: bold;
                     }
-                    .header__primary__container__wrapper--item--a:hover{
+                    .header-main-container__wrapper--item--a:hover{
                         color: #fff;
                         cursor: pointer;
                         font-size: 13px;
                     }
                 }
-                .header__primary__container__wrapper--item::after {
+                .header-main-container__wrapper--item::after {
                     content: '';
                     width: 1px;
                     height: 12px;
@@ -151,7 +151,7 @@ header{
                     right: 7px;
                 }
                 /* TODO: header-sub-contaienr__release--item.last classと同じ理由です。 */
-                .header__primary__container__wrapper--item:last-of-type {
+                .header-main-container__wrapper--item:last-of-type {
                     content: none;
                 }
             }
