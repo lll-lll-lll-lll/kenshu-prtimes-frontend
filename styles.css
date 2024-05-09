@@ -1,23 +1,18 @@
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
     font-size: 100%;
     font: serif;
 }
 
 .service-header {
     background-color: #345584;
-    box-sizing: border-box;
-    display: block;
+    display: inherit;
 }
 
-.menu {
+.header__container {
     align-items: center;
     background-color: #345584;
     display: flex;
     justify-content: space-between;
-    left: 175px;
     margin: 0 auto;
     padding: 12px 0;
     width: 1125px;
@@ -44,7 +39,6 @@
 .release-search__button {
     background-color: #3081c9;
     border-radius: 0 4px 4px 0;
-    cursor: pointer;
     height: 30px;
     width: 30px;
 }
@@ -57,11 +51,10 @@
 .brand-logo-img-link {
     display: flex;
     text-align: center;
-    cursor: pointer;
 }
 
 .brand__text {
-    color: #BFC9D7;
+    color: #bfc9d7;
     font-size: 12px;
     letter-spacing: -.05em;
     padding-left: 12px;
@@ -76,8 +69,6 @@
     background-color: #345584;
     border-radius: 5px;
     display: flex;
-    list-style: none;
-    margin: 0;
     padding: 6px 15px 8px;
 }
 
@@ -90,20 +81,17 @@
 
 .user-menu__list-item-link {
     color: #fff;
-    cursor: pointer;
     font-size: 13px;
-    text-decoration: none;
 }
 
 .user-menu__list-item-link:hover {
     color: #fff;
-    cursor: pointer;
     font-size: 13px;
     text-decoration: underline;
 }
 
 .user-menu__list-item-link::after {
-    background-color: #BFC9D7;
+    background-color: #bfc9d7;
     content: '';
     height: 13px;
     position: absolute;
@@ -120,14 +108,13 @@
 
 .service__list {
     display: flex;
-    list-style: none;
     margin: 0 auto;
     padding: 1px 0 12px;
     width: 1125px;
 }
 
 .service__list-item {
-    color: #BFC9D7;
+    color: #bfc9d7;
     display: list-item;
     font-size: 12px;
     line-height: 12px;
@@ -136,8 +123,7 @@
 }
 
 .service__list-item-link {
-    color: #BFC9D7;
-    cursor: pointer;
+    color: #bfc9d7;
     font-size: 13px;
 }
 
@@ -148,7 +134,6 @@
 
 .service__list-item-link:hover {
     color: #fff;
-    cursor: pointer;
     font-size: 13px;
 }
 
@@ -156,7 +141,7 @@
     content: '';
     width: 1px;
     height: 12px;
-    background-color: #BFC9D7;
+    background-color: #bfc9d7;
     position: absolute;
     top: 2px;
     right: 7px;
