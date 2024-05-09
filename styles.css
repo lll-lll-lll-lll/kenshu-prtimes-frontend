@@ -88,21 +88,21 @@
     position: relative;
 }
 
-.user-menu__list-item--link {
+.user-menu__list-item-link {
     color: #fff;
     cursor: pointer;
     font-size: 13px;
     text-decoration: none;
 }
 
-.user-menu__list-item--link:hover {
+.user-menu__list-item-link:hover {
     color: #fff;
     cursor: pointer;
     font-size: 13px;
     text-decoration: underline;
 }
 
-.user-menu__list-item--link::after {
+.user-menu__list-item-link::after {
     background-color: #BFC9D7;
     content: '';
     height: 13px;
