@@ -29,7 +29,7 @@
     display: flex;
 }
 
-.search-input {
+.release-search__input {
     background: #fff;
     border: none;
     border-radius: 4px 0 0 4px;
@@ -41,7 +41,7 @@
     width: 258px;
 }
 
-.search-button {
+.release-search__button {
     background-color: #3081c9;
     border-radius: 0 4px 4px 0;
     cursor: pointer;
