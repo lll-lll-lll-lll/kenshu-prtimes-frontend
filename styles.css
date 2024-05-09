@@ -6,6 +6,7 @@
 .header {
   background-color: #345584;
   display: inherit;
+
   .header__container {
     align-items: center;
     background-color: #345584;
@@ -20,10 +21,12 @@
 .brand-logo {
   align-items: center;
   display: flex;
+
   .brand-logo__img-link {
     display: flex;
     text-align: center;
   }
+
   .brand__text {
     color: #bfc9d7;
     font-size: 12px;
@@ -33,6 +36,7 @@
 
 .user-menu {
   margin-left: auto;
+
   .user-menu__list {
     align-items: center;
     background-color: #345584;
@@ -78,6 +82,7 @@
   margin-left: 10px;
   width: 288px;
   display: flex;
+
   .release-search__input {
     background: #fff;
     border: none;
@@ -89,6 +94,7 @@
     padding-left: 15px;
     width: 258px;
   }
+
   .release-search__button {
     background-color: #3081c9;
     border-radius: 0 4px 4px 0;
@@ -101,6 +107,7 @@
   background-color: #345584;
   display: block;
   margin-top: -4px;
+
   .service__list {
     display: flex;
     margin: 0 auto;
