@@ -6,69 +6,40 @@
 .header {
   background-color: #345584;
   display: inherit;
-}
-
-.header__container {
-  align-items: center;
-  background-color: #345584;
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  padding: 12px 0;
-  width: 1125px;
-}
-
-.release-search {
-  margin-left: 10px;
-  width: 288px;
-  display: flex;
-}
-
-.release-search__input {
-  background: #fff;
-  border: none;
-  border-radius: 4px 0 0 4px;
-  font-size: 13px;
-  height: 30px;
-  line-height: 30px;
-  outline: none;
-  padding-left: 15px;
-  width: 258px;
-}
-
-.release-search__button {
-  background-color: #3081c9;
-  border-radius: 0 4px 4px 0;
-  height: 30px;
-  width: 30px;
+  .header__container {
+    align-items: center;
+    background-color: #345584;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 12px 0;
+    width: 1125px;
+  }
 }
 
 .brand-logo {
   align-items: center;
   display: flex;
-}
-
-.brand-logo__img-link {
-  display: flex;
-  text-align: center;
-}
-
-.brand__text {
-  color: #bfc9d7;
-  font-size: 12px;
-  padding-left: 12px;
+  .brand-logo__img-link {
+    display: flex;
+    text-align: center;
+  }
+  .brand__text {
+    color: #bfc9d7;
+    font-size: 12px;
+    padding-left: 12px;
+  }
 }
 
 .user-menu {
   margin-left: auto;
-}
-
-.user-menu__list {
-  align-items: center;
-  background-color: #345584;
-  border-radius: 5px;
-  display: flex;
-  padding: 6px 15px 8px;
+  .user-menu__list {
+    align-items: center;
+    background-color: #345584;
+    border-radius: 5px;
+    display: flex;
+    padding: 6px 15px 8px;
+  }
 }
 
 .user-menu__list-item {
@@ -103,17 +74,39 @@
   text-decoration: underline;
 }
 
+.release-search {
+  margin-left: 10px;
+  width: 288px;
+  display: flex;
+  .release-search__input {
+    background: #fff;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    font-size: 13px;
+    height: 30px;
+    line-height: 30px;
+    outline: none;
+    padding-left: 15px;
+    width: 258px;
+  }
+  .release-search__button {
+    background-color: #3081c9;
+    border-radius: 0 4px 4px 0;
+    height: 30px;
+    width: 30px;
+  }
+}
+
 .service {
   background-color: #345584;
   display: block;
   margin-top: -4px;
-}
-
-.service__list {
-  display: flex;
-  margin: 0 auto;
-  padding: 1px 0 12px;
-  width: 1125px;
+  .service__list {
+    display: flex;
+    margin: 0 auto;
+    padding: 1px 0 12px;
+    width: 1125px;
+  }
 }
 
 .service__list-item {
