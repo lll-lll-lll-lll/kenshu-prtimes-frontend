@@ -49,11 +49,11 @@
     width: 30px;
 }
 
-.brand-logo {
+.brand__logo {
     align-items: center;
     display: flex;
 
-    .logo-img-link {
+    .brand__logo-img-link {
         display: flex;
         text-align: center;
         cursor: pointer;
