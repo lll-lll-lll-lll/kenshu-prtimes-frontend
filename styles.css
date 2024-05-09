@@ -6,13 +6,13 @@
     font: serif;
 }
 
-.header-container {
+.service-header {
     background-color: #345584;
     box-sizing: border-box;
     display: block;
 }
 
-.header-wrapper {
+.service-header-container {
     align-items: center;
     background-color: #345584;
     display: flex;
