@@ -26,9 +26,7 @@
 .release-search {
     margin-left: 10px;
     width: 288px;
-    .release-search-wrapper {
-        display: flex;
-    }
+    display: flex;
 }
 
 .search-input {
