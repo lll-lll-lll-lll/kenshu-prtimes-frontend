@@ -3,11 +3,15 @@
   <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"
+    />
     <title>PR TIMES</title>
   </head>
   <body>
     <header class="service-header">
-      <div class="menu">
+      <div class="header__container">
         <div class="brand-logo">
           <a href="#" class="brand-logo-img-link">
             <img
@@ -21,7 +25,7 @@
             プレスリリース・ニュース配信サービスのPR TIMES
           </span>
         </div>
-        <div class="user-menu">
+        <nav aria-label="user-menu" class="user-menu">
           <ul class="user-menu__list">
             <li class="user-menu__list-item">
               <a class="user-menu__list-item-link" href="#"
@@ -35,7 +39,7 @@
               <a class="user-menu__list-item-link" href="#">ログイン</a>
             </li>
           </ul>
-        </div>
+        </nav>
         <form class="release-search">
           <input
             class="release-search__input"
@@ -52,7 +56,7 @@
           </button>
         </form>
       </div>
-      <nav class="service">
+      <nav aria-label="service" class="service">
         <ul class="service__list">
           <li class="service__list-item">
             <a class="service__list-item-link--active" href="#"
