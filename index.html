@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/reset.css" />
+    <title>PR TIMES</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <div class="brand-logo">
+          <a href="#" class="brand-logo__img-link">
+            <img
+              alt="PR TIMES"
+              height="30"
+              width="120"
+              src="/images/logo_prtimes.svg"
+            />
+          </a>
+          <span class="brand-logo__text">
+            プレスリリース・ニュース配信サービスのPR TIMES
+          </span>
+        </div>
+        <nav class="user-menu">
+          <ul class="user-menu__list">
+            <li class="user-menu__list-item">
+              <a class="user-menu__list-item-link" href="#"
+                >プレスリリースを受信</a
+              >
+            </li>
+            <li class="user-menu__list-item">
+              <a class="user-menu__list-item-link" href="#">配信を依頼</a>
+            </li>
+            <li class="user-menu__list-item">
+              <a class="user-menu__list-item-link" href="#">ログイン</a>
+            </li>
+          </ul>
+        </nav>
+        <form class="release-search">
+          <input
+            class="release-search__input"
+            type="search"
+            placeholder="キーワードで検索"
+          />
+          <button class="release-search__button" type="submit">
+            <img
+              alt="検索"
+              src="/images/magnifying-glass-solid.svg"
+              width="20"
+              height="20"
+            />
+          </button>
+        </form>
+      </div>
+      <nav class="service">
+        <ul class="service__list">
+          <li class="service__list-item">
+            <a class="service__list-item-link--active" href="#"
+              >プレスリリース</a
+            >
+          </li>
+          <li class="service__list-item">
+            <a class="service__list-item-link" href="#">ランキング</a>
+          </li>
+          <li class="service__list-item">
+            <a class="service__list-item-link" href="#">TV</a>
+          </li>
+          <li class="service__list-item">
+            <a class="service__list-item-link" href="#">ストーリー</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div id="category-header"></div>
+    <div id="ranking"></div>
+    <main></main>
+    <footer></footer>
+  </body>
+</html>
