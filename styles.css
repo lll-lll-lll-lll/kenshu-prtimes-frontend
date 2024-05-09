@@ -52,19 +52,19 @@
 .brand__logo {
     align-items: center;
     display: flex;
+}
 
-    .brand__logo-img-link {
-        display: flex;
-        text-align: center;
-        cursor: pointer;
-    }
+.brand__logo-img-link {
+    display: flex;
+    text-align: center;
+    cursor: pointer;
+}
 
-    .brand__text {
-        color: #BFC9D7;
-        font-size: 12px;
-        letter-spacing: -.05em;
-        padding-left: 12px;
-    }
+.brand__text {
+    color: #BFC9D7;
+    font-size: 12px;
+    letter-spacing: -.05em;
+    padding-left: 12px;
 }
 
 .user-menu {
