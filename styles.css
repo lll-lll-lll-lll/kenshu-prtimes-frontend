@@ -1,148 +1,146 @@
 * {
-    font-size: 100%;
-    font: serif;
+  font-size: 100%;
+  font: serif;
 }
 
 .header {
-    background-color: #345584;
-    display: inherit;
+  background-color: #345584;
+  display: inherit;
 }
 
 .header__container {
-    align-items: center;
-    background-color: #345584;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    padding: 12px 0;
-    width: 1125px;
+  align-items: center;
+  background-color: #345584;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 12px 0;
+  width: 1125px;
 }
 
 .release-search {
-    margin-left: 10px;
-    width: 288px;
-    display: flex;
+  margin-left: 10px;
+  width: 288px;
+  display: flex;
 }
 
 .release-search__input {
-    background: #fff;
-    border: none;
-    border-radius: 4px 0 0 4px;
-    font-size: 13px;
-    height: 30px;
-    line-height: 30px;
-    outline: none;
-    padding-left: 15px;
-    width: 258px;
+  background: #fff;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  font-size: 13px;
+  height: 30px;
+  line-height: 30px;
+  outline: none;
+  padding-left: 15px;
+  width: 258px;
 }
 
 .release-search__button {
-    background-color: #3081c9;
-    border-radius: 0 4px 4px 0;
-    height: 30px;
-    width: 30px;
+  background-color: #3081c9;
+  border-radius: 0 4px 4px 0;
+  height: 30px;
+  width: 30px;
 }
 
 .brand-logo {
-    align-items: center;
-    display: flex;
+  align-items: center;
+  display: flex;
 }
 
 .brand-logo-img-link {
-    display: flex;
-    text-align: center;
+  display: flex;
+  text-align: center;
 }
 
 .brand__text {
-    color: #bfc9d7;
-    font-size: 12px;
-    letter-spacing: -.05em;
-    padding-left: 12px;
+  color: #bfc9d7;
+  font-size: 12px;
+  padding-left: 12px;
 }
 
 .user-menu {
-    margin-left: auto;
+  margin-left: auto;
 }
 
 .user-menu__list {
-    align-items: center;
-    background-color: #345584;
-    border-radius: 5px;
-    display: flex;
-    padding: 6px 15px 8px;
+  align-items: center;
+  background-color: #345584;
+  border-radius: 5px;
+  display: flex;
+  padding: 6px 15px 8px;
 }
 
 .user-menu__list-item {
-    background-color: transparent;
-    display: list-item;
-    padding-right: 15px;
-    position: relative;
+  background-color: transparent;
+  display: list-item;
+  padding-right: 15px;
+  position: relative;
 }
 
 .user-menu__list-item-link {
-    color: #fff;
-    font-size: 13px;
+  color: #fff;
+  font-size: 13px;
 }
 
 .user-menu__list-item-link:hover {
-    color: #fff;
-    font-size: 13px;
-    text-decoration: underline;
+  color: #fff;
+  font-size: 13px;
+  text-decoration: underline;
 }
 
 .user-menu__list-item-link::after {
-    background-color: #bfc9d7;
-    content: '';
-    height: 13px;
-    position: absolute;
-    top: 4px;
-    right: 7px;
-    width: 1px;
+  background-color: #bfc9d7;
+  content: "";
+  height: 13px;
+  position: absolute;
+  top: 4px;
+  right: 7px;
+  width: 1px;
 }
 
 .service {
-    background-color: #345584;
-    display: block;
-    margin-top: -4px;
+  background-color: #345584;
+  display: block;
+  margin-top: -4px;
 }
 
 .service__list {
-    display: flex;
-    margin: 0 auto;
-    padding: 1px 0 12px;
-    width: 1125px;
+  display: flex;
+  margin: 0 auto;
+  padding: 1px 0 12px;
+  width: 1125px;
 }
 
 .service__list-item {
-    color: #bfc9d7;
-    display: list-item;
-    font-size: 12px;
-    line-height: 12px;
-    padding-right: 15px;
-    position: relative;
+  color: #bfc9d7;
+  display: list-item;
+  font-size: 12px;
+  line-height: 12px;
+  padding-right: 15px;
+  position: relative;
+}
+.service__list-item::after {
+  content: "";
+  width: 1px;
+  height: 12px;
+  background-color: #bfc9d7;
+  position: absolute;
+  top: 2px;
+  right: 7px;
 }
 
 .service__list-item-link {
-    color: #bfc9d7;
-    font-size: 13px;
+  color: #bfc9d7;
+  font-size: 13px;
 }
 
 .service__list-item-link--active {
-    color: #fff;
-    font-weight: bold;
+  color: #fff;
+  font-weight: bold;
 }
 
 .service__list-item-link:hover {
-    color: #fff;
-    font-size: 13px;
-}
-
-.service__list-item-link::after {
-    content: '';
-    width: 1px;
-    height: 12px;
-    background-color: #bfc9d7;
-    position: absolute;
-    top: 2px;
-    right: 7px;
+  color: #fff;
+  font-size: 13px;
 }
