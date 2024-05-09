@@ -153,3 +153,30 @@
     font-weight: bold;
   }
 }
+
+.release-category {
+  border-bottom: solid #e4e4e4;
+
+  .release-category__list {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+  }
+
+  .release-category__list-item {
+    padding: 0 10px;
+  }
+
+  .release-category__list-item-link {
+    color: #294c7a;
+
+    &:hover {
+      font-weight: bold;
+    }
+  }
+
+  .release-category__list-item-link--active {
+    color: #294c7a;
+    font-weight: bold;
+  }
+}
