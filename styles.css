@@ -49,12 +49,12 @@
     width: 30px;
 }
 
-.brand__logo {
+.brand-logo {
     align-items: center;
     display: flex;
 }
 
-.brand__logo-img-link {
+.brand-logo-img-link {
     display: flex;
     text-align: center;
     cursor: pointer;
