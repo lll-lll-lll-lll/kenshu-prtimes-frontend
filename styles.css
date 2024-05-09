@@ -44,37 +44,37 @@
     display: flex;
     padding: 6px 15px 8px;
   }
-}
 
-.user-menu__list-item {
-  background-color: transparent;
-  display: list-item;
-  padding-right: 15px;
-  position: relative;
+  .user-menu__list-item {
+    background-color: transparent;
+    display: list-item;
+    padding-right: 15px;
+    position: relative;
 
-  &::after {
-    background-color: #bfc9d7;
-    content: "";
-    height: 13px;
-    position: absolute;
-    top: 4px;
-    right: 7px;
-    width: 1px;
+    &::after {
+      background-color: #bfc9d7;
+      content: "";
+      height: 13px;
+      position: absolute;
+      top: 4px;
+      right: 7px;
+      width: 1px;
+    }
+
+    &:last-of-type::after {
+      content: none;
+    }
   }
 
-  &:last-of-type::after {
-    content: none;
-  }
-}
-
-.user-menu__list-item-link {
-  color: #fff;
-  font-size: 13px;
-
-  &:hover {
+  .user-menu__list-item-link {
     color: #fff;
     font-size: 13px;
-    text-decoration: underline;
+
+    &:hover {
+      color: #fff;
+      font-size: 13px;
+      text-decoration: underline;
+    }
   }
 }
 
@@ -114,42 +114,42 @@
     padding: 1px 0 12px;
     width: 1125px;
   }
-}
 
-.service__list-item {
-  color: #bfc9d7;
-  display: list-item;
-  font-size: 12px;
-  line-height: 12px;
-  padding-right: 15px;
-  position: relative;
+  .service__list-item {
+    color: #bfc9d7;
+    display: list-item;
+    font-size: 12px;
+    line-height: 12px;
+    padding-right: 15px;
+    position: relative;
 
-  &::after {
-    content: "";
-    width: 1px;
-    height: 12px;
-    background-color: #bfc9d7;
-    position: absolute;
-    top: 2px;
-    right: 7px;
+    &::after {
+      content: "";
+      width: 1px;
+      height: 12px;
+      background-color: #bfc9d7;
+      position: absolute;
+      top: 2px;
+      right: 7px;
+    }
+
+    &:last-of-type:after {
+      content: none;
+    }
   }
 
-  &:last-of-type:after {
-    content: none;
-  }
-}
-
-.service__list-item-link {
-  color: #bfc9d7;
-  font-size: 13px;
-
-  &:hover {
-    color: #fff;
+  .service__list-item-link {
+    color: #bfc9d7;
     font-size: 13px;
-  }
-}
 
-.service__list-item-link--active {
-  color: #fff;
-  font-weight: bold;
+    &:hover {
+      color: #fff;
+      font-size: 13px;
+    }
+  }
+
+  .service__list-item-link--active {
+    color: #fff;
+    font-weight: bold;
+  }
 }
