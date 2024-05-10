@@ -282,10 +282,10 @@
   margin: 0 auto;
   padding: 30px 0 50px;
   width: 1125px;
+}
 
-  .recent-release {
-    width: 800px;
-  }
+.recent-release {
+  width: 700px;
 
   .recent-release__title {
     font-size: 24px;
