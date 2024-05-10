@@ -180,3 +180,99 @@
     font-weight: bold;
   }
 }
+
+.release-ranking {
+  background-color: #f2f2f2;
+  margin: 0 auto;
+  padding: 30px 0;
+
+  .release-ranking__list {
+    display: flex;
+    justify-content: center;
+  }
+
+  .release-ranking__list-item {
+    background: #fff;
+    height: 244px;
+    margin-right: 8px;
+    position: relative;
+    width: 180px;
+  }
+
+  .release-ranking__list-item-link--active {
+    display: block;
+  }
+
+  .release-ranking__list-item-rank {
+    background-color: #294c7a;
+    color: #fff;
+    font-weight: bold;
+    line-height: 24px;
+    text-align: center;
+    position: absolute;
+    width: 24px;
+    z-index: 1;
+  }
+
+  .release-ranking__list-item-img {
+    background: #fff;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .release-ranking__list-item-text {
+    display: block;
+    font-size: 13px;
+    line-height: 1.6;
+    color: #3b3b3b;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 7px 10px;
+    white-space: nowrap;
+
+    &:hover {
+      color: #3081c9;
+      text-decoration: underline;
+    }
+  }
+
+  .release-ranking__list-item-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 10px;
+  }
+
+  .release-ranking__list-item-datetime {
+    color: #a2a2a2;
+    font-size: 12px;
+    margin-top: 2px;
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+
+    &::before {
+      content: url("/images/icon_time.svg");
+      display: inline-block;
+      height: 10px;
+      margin-right: 3px;
+      width: 12px;
+    }
+  }
+
+  .release-ranking__list-item-link-company {
+    color: #a2a2a2;
+    font-size: 13px;
+    margin-top: 3px;
+    overflow: hidden;
+
+    &:hover {
+      color: #3b3b3b;
+    }
+  }
+
+  .release-ranking__list-item-pv-uv {
+    color: #a2a2a2;
+    font-size: 13px;
+    margin-top: 3px;
+  }
+}
