@@ -368,6 +368,25 @@
       color: #3b3b3b;
     }
   }
+
+  .recent-release__list-item--more {
+    margin-top: 20px;
+  }
+
+  .recent-release__list-item-link--more {
+    background-color: #3081c9;
+    border-radius: 3px;
+    box-shadow: 0 2px 2px #0000003d;
+    color: #fff;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 38px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    width: 110px;
+  }
 }
 
 .sidebar {
