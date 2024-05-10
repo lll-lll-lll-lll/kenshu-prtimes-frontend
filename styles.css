@@ -297,7 +297,7 @@
   .recent-release__list {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    width: 1125px;
   }
 
   .recent-release__list-item {
@@ -366,6 +366,67 @@
 
     &:hover {
       color: #3b3b3b;
+    }
+  }
+}
+
+.sidebar {
+  width: 310px;
+  margin-left: auto;
+
+  .sidebar-keywords {
+    padding: 1px 0 10px;
+    border-bottom: 1px solid #e4e4e4;
+    margin-bottom: 30px;
+  }
+
+  .sidebar-keywords__title {
+    font-size: 16px;
+    color: #333;
+    padding: 5px 0 20px;
+    font-weight: bold;
+  }
+
+  .sidebar-keywords__list {
+    padding: 30px 0;
+    list-style: none;
+  }
+
+  .sidebar-keywords__list-item {
+    background-color: #f1f1f1;
+    border-radius: 14px;
+    margin: 0 12px 9px 0;
+    display: inline-block;
+  }
+
+  .sidebar-keywords__list-item-link {
+    font-size: 13px;
+    color: #3b3b3b;
+    height: 22px;
+    line-height: 22px;
+    padding: 0 8px;
+
+    &:hover {
+      color: black;
+    }
+  }
+
+  .sidebar-keywords__list-item--more {
+    display: inline-block;
+    margin: 0 0 14px 0;
+    border-radius: 14px;
+    border: 1px solid #f1f1f1;
+  }
+
+  .sidebar-keywords__list-item-link--more {
+    height: 22px;
+    line-height: 22px;
+    font-size: 12px;
+    color: #3b3b3b;
+    padding: 0 8px;
+
+    &:hover {
+      color: #3081c9;
     }
   }
 }
