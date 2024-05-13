@@ -5,16 +5,15 @@
 
 .header {
   background-color: #345584;
-  display: inherit;
 
   .header__container {
     align-items: center;
     background-color: #345584;
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
     padding: 12px 0;
     width: 1125px;
+    margin: 0 auto;
   }
 }
 
@@ -23,32 +22,29 @@
   display: flex;
 
   .brand-logo__img-link {
-    display: flex;
     text-align: center;
   }
 
   .brand-logo__text {
     color: #bfc9d7;
     font-size: 12px;
-    padding-left: 12px;
+    padding: 0 12px;
   }
 }
 
 .user-menu {
-  margin-left: auto;
-
   .user-menu__list {
     align-items: center;
     background-color: #345584;
     border-radius: 5px;
     display: flex;
-    padding: 6px 15px 8px;
+    justify-content: space-between;
+    padding: 12px 8px;
   }
 
   .user-menu__list-item {
     background-color: transparent;
-    display: list-item;
-    padding-right: 15px;
+    padding: 0 12px;
     position: relative;
 
     &::after {
@@ -79,8 +75,6 @@
 }
 
 .release-search {
-  margin-left: 10px;
-  width: 288px;
   display: flex;
 
   .release-search__input {
@@ -91,7 +85,7 @@
     height: 30px;
     line-height: 30px;
     outline: none;
-    padding-left: 15px;
+    padding: 0 15px;
     width: 258px;
   }
 
@@ -106,13 +100,12 @@
 .service {
   background-color: #345584;
   display: block;
-  margin-top: -4px;
+  padding: 12px 0;
 
   .service__list {
     display: flex;
     margin: 0 auto;
-    padding: 1px 0 12px;
-    width: 1125px;
+    /* width: 1125px; */
   }
 
   .service__list-item {
@@ -244,8 +237,7 @@
 
   .release-ranking__list-item-datetime {
     color: #a2a2a2;
-    font-size: 12px;
-    margin-top: 2px;
+    font-size: 13px;
     overflow: hidden;
     position: relative;
     white-space: nowrap;
@@ -262,8 +254,6 @@
   .release-ranking__list-item-link-company {
     color: #a2a2a2;
     font-size: 13px;
-    margin-top: 3px;
-    overflow: hidden;
 
     &:hover {
       color: #3b3b3b;
@@ -273,7 +263,6 @@
   .release-ranking__list-item-pv-uv {
     color: #a2a2a2;
     font-size: 13px;
-    margin-top: 3px;
   }
 }
 
@@ -448,7 +437,6 @@
 
 .footer {
   background: #fafafa;
-  min-width: 1125px;
   padding: 73px 0 10px;
 
   .footer__container {
@@ -465,7 +453,6 @@
 
   .footer-release-service-wrapper {
     display: table-cell;
-    width: 25%;
   }
 
   .footer-release-service__list {
