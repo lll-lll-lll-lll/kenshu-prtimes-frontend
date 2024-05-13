@@ -342,17 +342,13 @@
     }
   }
 
-  .recent-release__list-item-img-container {
+  .recent-release__list-item-link {
     margin-left: auto;
     width: 100px;
   }
 
   .recent-release__list-item-img-wrapper {
-    position: relative;
-    display: block;
-    min-width: 100px;
-    background-color: #f2f2f2;
-    overflow: hidden;
+    width: 100px;
   }
 
   .recent-release__list-item-img {
@@ -405,45 +401,45 @@
     padding: 5px 0 20px;
     font-weight: bold;
   }
-  
+
   .sidebar-keywords__list {
     padding: 30px 0;
     list-style: none;
   }
-  
+
   .sidebar-keywords__list-item {
     background-color: #f1f1f1;
     border-radius: 14px;
     margin: 0 12px 9px 0;
     display: inline-block;
   }
-  
+
   .sidebar-keywords__list-item-link {
     font-size: 13px;
     color: #3b3b3b;
     height: 22px;
     line-height: 22px;
     padding: 0 8px;
-  
+
     &:hover {
       color: black;
     }
   }
-  
+
   .sidebar-keywords__list-item--more {
     display: inline-block;
     margin: 0 0 14px 0;
     border-radius: 14px;
     border: 1px solid #f1f1f1;
   }
-  
+
   .sidebar-keywords__list-item-link--more {
     height: 22px;
     line-height: 22px;
     font-size: 12px;
     color: #3b3b3b;
     padding: 0 8px;
-  
+
     &:hover {
       color: #3081c9;
     }
