@@ -5,16 +5,15 @@
 
 .header {
   background-color: #345584;
-  display: inherit;
 
   .header__container {
     align-items: center;
     background-color: #345584;
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
     padding: 12px 0;
     width: 1125px;
+    margin: 0 auto;
   }
 }
 
@@ -23,32 +22,29 @@
   display: flex;
 
   .brand-logo__img-link {
-    display: flex;
     text-align: center;
   }
 
   .brand-logo__text {
     color: #bfc9d7;
     font-size: 12px;
-    padding-left: 12px;
+    padding: 0 12px;
   }
 }
 
 .user-menu {
-  margin-left: auto;
-
   .user-menu__list {
     align-items: center;
     background-color: #345584;
     border-radius: 5px;
     display: flex;
-    padding: 6px 15px 8px;
+    justify-content: space-between;
+    padding: 12px 8px;
   }
 
   .user-menu__list-item {
     background-color: transparent;
-    display: list-item;
-    padding-right: 15px;
+    padding: 0 12px;
     position: relative;
 
     &::after {
@@ -79,8 +75,6 @@
 }
 
 .release-search {
-  margin-left: 10px;
-  width: 288px;
   display: flex;
 
   .release-search__input {
@@ -91,7 +85,7 @@
     height: 30px;
     line-height: 30px;
     outline: none;
-    padding-left: 15px;
+    padding: 0 15px;
     width: 258px;
   }
 
@@ -105,22 +99,19 @@
 
 .service {
   background-color: #345584;
-  display: block;
-  margin-top: -4px;
+  padding: 12px 0;
+  margin: 0 auto;
+  width: 1125px;
 
   .service__list {
     display: flex;
-    margin: 0 auto;
-    padding: 1px 0 12px;
-    width: 1125px;
   }
 
   .service__list-item {
     color: #bfc9d7;
-    display: list-item;
     font-size: 12px;
     line-height: 12px;
-    padding-right: 15px;
+    padding: 0 15px;
     position: relative;
 
     &::after {
@@ -183,7 +174,6 @@
 
 .release-ranking {
   background-color: #f2f2f2;
-  margin: 0 auto;
   padding: 30px 0;
 
   .release-ranking__list {
@@ -194,7 +184,7 @@
   .release-ranking__list-item {
     background: #fff;
     height: 244px;
-    margin-right: 8px;
+    margin: 0 4px;
     position: relative;
     width: 180px;
   }
@@ -223,7 +213,6 @@
   .release-ranking__list-item-text {
     display: block;
     font-size: 13px;
-    line-height: 1.6;
     color: #3b3b3b;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -244,8 +233,7 @@
 
   .release-ranking__list-item-datetime {
     color: #a2a2a2;
-    font-size: 12px;
-    margin-top: 2px;
+    font-size: 13px;
     overflow: hidden;
     position: relative;
     white-space: nowrap;
@@ -254,7 +242,6 @@
       content: url("/images/icon_time.svg");
       display: inline-block;
       height: 10px;
-      margin-right: 3px;
       width: 12px;
     }
   }
@@ -262,8 +249,6 @@
   .release-ranking__list-item-link-company {
     color: #a2a2a2;
     font-size: 13px;
-    margin-top: 3px;
-    overflow: hidden;
 
     &:hover {
       color: #3b3b3b;
@@ -273,7 +258,6 @@
   .release-ranking__list-item-pv-uv {
     color: #a2a2a2;
     font-size: 13px;
-    margin-top: 3px;
   }
 }
 
@@ -302,15 +286,13 @@
 
   .recent-release__list-item {
     width: 380px;
-    min-height: 118px;
-    padding: 15px 0 13px;
+    margin: 10px 20px;
     border-bottom: 1px solid #e4e4e4;
     position: relative;
   }
 
   .recent-release__list-item-wrapper {
     width: 265px;
-    height: 100px;
     display: flex;
   }
 
@@ -330,8 +312,6 @@
     color: #a2a2a2;
     font-size: 12px;
     height: 15px;
-    display: inline-block;
-    line-height: 15px;
 
     &::before {
       content: url("/images/icon_time.svg");
@@ -366,7 +346,7 @@
   }
 
   .recent-release__list-item--more {
-    margin-top: 20px;
+    margin: 20px;
   }
 
   .recent-release__list-item-link--more {
@@ -375,11 +355,10 @@
     box-shadow: 0 2px 2px #0000003d;
     color: #fff;
     display: block;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: bold;
     line-height: 38px;
     margin: 0 auto;
-    position: relative;
     text-align: center;
     width: 110px;
   }
@@ -391,26 +370,22 @@
 }
 
 .sidebar-keywords {
-  padding: 1px 0 10px;
   border-bottom: 1px solid #e4e4e4;
-  margin-bottom: 30px;
 
   .sidebar-keywords__title {
     font-size: 16px;
     color: #333;
-    padding: 5px 0 20px;
     font-weight: bold;
   }
 
   .sidebar-keywords__list {
     padding: 30px 0;
-    list-style: none;
   }
 
   .sidebar-keywords__list-item {
     background-color: #f1f1f1;
     border-radius: 14px;
-    margin: 0 12px 9px 0;
+    margin: 4px;
     display: inline-block;
   }
 
@@ -428,20 +403,74 @@
 
   .sidebar-keywords__list-item--more {
     display: inline-block;
-    margin: 0 0 14px 0;
     border-radius: 14px;
     border: 1px solid #f1f1f1;
   }
 
   .sidebar-keywords__list-item-link--more {
-    height: 22px;
-    line-height: 22px;
-    font-size: 12px;
+    line-height: 20px;
+    font-size: 13px;
     color: #3b3b3b;
-    padding: 0 8px;
+    margin: 8px;
 
     &:hover {
       color: #3081c9;
     }
   }
+}
+
+.footer {
+  background: #fafafa;
+  padding: 40px 0;
+
+  .footer__container {
+    width: 1125px;
+    margin: 0 auto;
+  }
+}
+
+.footer-release-service {
+  border-bottom: 1px solid #e0e0e0;
+  justify-content: space-between;
+  padding: 40px 0;
+  display: flex;
+
+  .footer-release-service__list {
+    flex-direction: column;
+  }
+
+  .footer-release-service__list-item {
+    color: #000;
+    margin-bottom: 18px;
+    font-size: 13px;
+    height: 13px;
+  }
+
+  .footer-release-service__list-item-link {
+    font-size: 13px;
+    color: #797979;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.footer-terms {
+  padding: 10px;
+
+  .footer-terms__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-terms__list-item-link {
+    font-size: 13px;
+    color: #797979;
+  }
+}
+
+.copyright {
+  font-size: 12px;
+  color: #797979;
 }
